@@ -1,3 +1,59 @@
 body {
     background-color: #fefefe;
 }
+p {
+    color: #999;
+}
+div {
+    background-color: red;
+    color: #fff;
+}
+img {
+    width: 200;
+}
+
+/* Обращаемся к классам class через . , а к идентификаторам id через решетку */
+
+.elem {
+    width: 100px;
+    height: 100px;
+    background-color: #e8246f;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#elem {
+    width: 100px;
+    height: 100px;
+    background-color: #f38d8d;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+/* Синтаксис файла CSS 
+селектор {
+свойство: значение;
+} 
+background-color - фоновый цвет элемента
+color - цвкт текста
+*/
+body {
+    background-color: rgba(255, 6, 143, 0.253); 
+    margin: 0;
+}
+/* Сброс отступов во всех тэгах, нежелательно использовать, бывает перегружен. Нормализация CSS */
+* {
+    margin: ;
+}
+
+.elem {
+    background-color: #a12bd8;
+}
+#elem {
+    background-color: #d82b99;
+}
+/* Селекторы вложенности и соседства, наведение на ссылку */
+
+li a {
+    color: #6713ef;
+}

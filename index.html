@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Git Course</title>
-    <!-- Подключили стили -->
+    <!-- Подключение стилей -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- margin задает отступы для элементов <p>  / Единица измерения -->
     <style>
@@ -21,9 +21,24 @@
     <h4>Hello Git</h4>
     <h5>Hello Git</h5>
     <h6>Hello Git</h6>
+        HTML - язык разметки
+    </p>
+    <!-- Подключение картинки -->
+    <img src="img/html.jpg" alt="HTML" width="150">
     
+    <!-- Способ подключения CSS через атрибут “style” -->
+    <div style="border: 1px solid #000; margin-top: 16px;">Див со стилем</div>
     <form action="1">
-        <input type="text"><br>
+        <input type="color"><br>
+        <input type="date"><br>
+        <input type="file"><br>
+        <input type="password"><br>
+        <input type="range"><br>
+        <input type="button" value="Кнопка"><br>
+        <input type="checkbox"><br>
+        <input type="radio" name="group" value="Кнопка"><br>
+        <input type="radio" name="group" value="Кнопка"><br>
+        <input type="radio" name="group" value="Кнопка"><br>
         <textarea name="" id=""></textarea><br>
         <button>Кнопка</button>
         <select name="" id="">
@@ -33,12 +48,8 @@
         </select>
     </form>
     <p>
-        HTML - язык разметки
-    </p>
-    <!-- Подключили картинку -->
-    <img src="img/html.jpg" alt="HTML" width="150">
-    <script src="scripts/script.js"></script>
-    <!-- Создаю нумерованный список / Alt + Shift + стрелка вниз - дублирование строки / Зажатием Alt и левой кнопкой мыши можно поставить курсор сразу во многих местах  -->
+    
+    <!-- Создание нумерованного списка / Alt + Shift + стрелка вниз - дублирование строки / Зажатием Alt и левой кнопкой мыши можно поставить курсор сразу во многих местах  -->
     <ol>
         <li>Lorem, ipsum.</li>
         <li>Lorem, ipsum.</li>
@@ -105,6 +116,49 @@
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam quos repudiandae deserunt, perspiciatis, illo atque vitae facilis odit culpa fugit id incidunt placeat. Rerum iste dicta tempore cupiditate omnis accusantium. 
         </div>
         <hr> <!-- горизонтальная линия. Не злоупотреблять  -->
+        <!-- Атрибуты тэгов
+        Универсальные - работают для всех тэгов:
+        title="Всплывающая подсказка"
+        hidden - позволяет скрыть элемент
+        class, id - позволяют работать с элементами в css и js -->
+        <div class="elem">1</div>
+        <div id="elem">2</div>
+        <script src="scripts/script.js"></script>
+        <!-- Специальные символы 1.26 -->
+    <pre style="font-size: 28px;">
+        &larr;
+        &rarr;
+        &uarr;
+        &darr;
+        &harr;
+        &bull;
+        &mdash;
+    </pre>
+    <!-- RGB цвета 1.28 Названия цветов на html можно загуглить, также существуют палитры-->
+    <!-- Цвет в HEX # - 16=ричная система счисления -->
+    <!-- Системы счисления
+    <pre>
+        Двоичная:
+        Восьмеричная:
+        Десятичная:
+        Шестнадцатеричная:
+    </pre> -->
+    <!-- Семантическая верстка - для слабовидящих и помогает продвигать сайт вверх в поисковиках
+    Среди старых тэгов к ним относится тэг P. -->
+    Тэги <i>Курсивный текст</i> и <b>Жирный текст</b> - не семантические, потому-что они не добавляют смысл выделенному тексту, а просто изменяют его внешний вид
+
+    <!-- <em>Акцент на тексте</em> и <strong>Важный текст</strong>- данные теги внешне работают так же как i и b, но при этом придают смысловое выделение тексту
+    Это помогает поисковым роботам -->
+
+    <!-- Для навигационного раздела можно использовать тэг nav, главное меню на странице -->
+    <header class="header">
+        <nav class="nav">
+        <a href="#" class="nav_item">Главная</a>
+        <a href="#" class="nav_item">Блог</a>
+        <a href="#" class="nav_item">Контакты</a>
+    </nav>
+    </header>
+<!-- В тэге main должно быть уникальное содержимое данной страницы, не повторяющееся на других. Семантический тэг article - позволяет сделать отделяемую смысловую единицу(комментарий, статью, карточку и тд.). Теги header и footer шапка сайта и подвал сайта, можно использовать много раз на странице. Тег aside - побочный косвенный контент. Использовать тэги только по своему прямому назначению. А любое оформление текста, отступы, оформление цвета делается с помощью css. Делать разметку логичной. Процесс разметки можно разделить на несколько шагов с разной степенью детализации. 1 - крупные смысловые блоки на каждой странице сайта - тэги header, main, footer; 2 - крупные смысловые разделы в блоках nav, section, article, asside, заголовок всего документа и заголовки смысловых разделов тэги - h1 - h6, мелкие элементы в смысловых разделах - списки, таблицы, параграфы, формы, цитаты, контактная информация и др, и последнее фразовые элементы - изображения, ссылки, кнопки, видео, время и мелкие текстовые элементы -->
 
 </body>
 
